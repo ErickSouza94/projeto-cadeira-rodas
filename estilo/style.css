@@ -9,11 +9,11 @@
 }
 
 body{
-    background-color: grey;
+    background-color: white;
     position: relative;
-     /* width: 100vw; 
-    height: auto;
-     */
+     width: 100%; 
+    
+    font-family: Arial, Helvetica, sans-serif
 }
 
 @media screen and (min-width: 300px) and (max-width: 992px){
@@ -27,32 +27,48 @@ header{
 }
 
 header img{
-    width: 100%;
+    width: 100vw;
     height: auto;
     padding: 20px;
 }
 
 nav{
     padding-bottom: 15px;
-    width: 100%;
+    width: 100vw;
+    display: block;
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+
+#menu{
+    display:flex;
+    flex-direction:column ;
+    gap: 25px;
+}
+
+#menu li{
+ 
+    text-align: center;
     list-style: none;
     height: 2vh;
-    
     justify-content: center;
     align-items: center;
     font-size: 1.5em; 
     
    
    
-    background-color: rgba(0, 128, 0, 0.151);
+    background-color: rgba(0, 128, 0, 0);
        
 } 
+
+i#burguer{
+    background-color: rgb(22, 105, 5);
+    display: block;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
 
 
 
@@ -63,7 +79,7 @@ ul{
     background-position: left center;
     
     
-    width: 100%;
+    width: 100vw;
     height: 400px;
     display: flex;
     flex-direction: row-reverse;
@@ -71,10 +87,10 @@ ul{
 }
 
 #layout1 .btn{
-    width: 170px;
+    /* width: 170px; */
     height: 50px;
     top: 200px;
-    right: -20px;
+    right: 40px;
     position: absolute;
 
     font-size: 2.2em;
@@ -118,6 +134,8 @@ ul{
 #sobre p{
     text-align: justify;
     text-indent: 15px;
+    letter-spacing: 1px;
+    
 }
 
 #botao{
@@ -134,6 +152,8 @@ ul{
     font-size: 1.5em;
     padding-top: 25px;
     padding-bottom: 25px;
+    gap: 10px;
+
 }
 
 #itens{
@@ -144,32 +164,73 @@ ul{
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
+
+    
     
 }
 
 .item{
     flex: none;
-    scroll-snap-align: center;
+    scroll-snap-align: start;
     pointer-events: none;
+
+    width: 100%;
+    height: 100%;
 }
 
-img {
-    width: 90vw;
-    height: 400px;
+.item > img {
+    width: 100%;
+    height: 100%;
     
+}
+
+#btn-galeria{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#fundo-mapa{
+    background-color: rgba(0, 0, 255, 0.247);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+    
+}
+
+
+#contatos p{
+    color: white;
+    text-align: center;
 }
 
 #contatos{
     background-color: rgba(0, 0, 255, 0.247);
     display: flex;
     flex-direction: column;
+   
     
     height: 300px;
+    gap: 25px;
 }
 
 #contatos h2{
     text-align: center;
 }
 
+#contatos .numeros{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    list-style: none;
+    height: 100vh;
+    gap: 25px;
+}
 
 }

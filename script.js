@@ -23,3 +23,17 @@ function leiaMais(){
     }
 }
 
+function tamanho(){
+    if (window.innerWidth >= 992){
+        navmenu.style.display = 'block'
+    }   else{
+        navmenu.style.display = 'none'
+        }
+    }
+function clickMenu(){
+    if (navmenu.style.display == 'block'){
+        navmenu.style.display = 'none'
+    } else {
+        navmenu.style.display = 'block'
+    }
+}
