@@ -1,0 +1,175 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.align{
+    padding: 20px;
+}
+
+body{
+    background-color: grey;
+    position: relative;
+     /* width: 100vw; 
+    height: auto;
+     */
+}
+
+@media screen and (min-width: 300px) and (max-width: 992px){
+  
+
+
+header{
+    background-color: rgba(0, 128, 0, 0.534);
+    width: 100%;
+    
+}
+
+header img{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+nav{
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+    height: 2vh;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em; 
+    
+   
+   
+    background-color: rgba(0, 128, 0, 0.151);
+       
+} 
+
+
+
+#layout1{
+    background-image: url(../midia/pexels-marcus-aurelius-4064229.jpg);
+    
+    background-size: cover;
+    background-position: left center;
+    
+    
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+
+#layout1 .btn{
+    width: 170px;
+    height: 50px;
+    top: 200px;
+    right: -20px;
+    position: absolute;
+
+    font-size: 2.2em;
+    text-shadow: 6px 5px 4px black;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+#layout2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    
+
+}
+
+#foto-brehmmer img{
+    border-radius: 50%;
+    border: 1px solid black;
+    box-shadow: inset 14px -8px 20px 4px black;
+    width: 300px;
+    
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sobre h2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#sobre p{
+    text-align: justify;
+    text-indent: 15px;
+}
+
+#botao{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#layout3{
+    display: grid;
+    place-items: center;
+    font-size: 1.5em;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#itens{
+    width: 90vw;
+    height: 300px; 
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    
+}
+
+.item{
+    flex: none;
+    scroll-snap-align: center;
+    pointer-events: none;
+}
+
+img {
+    width: 90vw;
+    height: 400px;
+    
+}
+
+#contatos{
+    background-color: rgba(0, 0, 255, 0.247);
+    display: flex;
+    flex-direction: column;
+    
+    height: 300px;
+}
+
+#contatos h2{
+    text-align: center;
+}
+
+
+}
