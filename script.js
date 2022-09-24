@@ -1,3 +1,5 @@
+/* SCROLL IMAGENS */
+
 document.querySelector("#itens")
 .addEventListener("wheel", event => {
     if(event.deltaY > 0) {
@@ -6,6 +8,10 @@ document.querySelector("#itens")
         event.target.scrollBy(-500, 0)
     }
 })
+
+/* FIM SCROLL IMAGENS */
+
+/* BOTÃO LEIA MAIS */
 
 function leiaMais(){
     var pontos = document.getElementById("pontos")
@@ -23,6 +29,10 @@ function leiaMais(){
     }
 }
 
+/* FIM BOTÃO LEIA MAIS */
+
+/* MENU BURGUER */
+
 function tamanho(){
     if (window.innerWidth >= 992){
         navmenu.style.display = 'block'
@@ -37,3 +47,6 @@ function clickMenu(){
         navmenu.style.display = 'block'
     }
 }
+
+/* FIM MENU BURGUER */
+
