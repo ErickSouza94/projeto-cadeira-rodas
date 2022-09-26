@@ -24,20 +24,31 @@ let modal = document.querySelector('.modal')
 let modalImg = document.querySelector('#modal_img')
 let btClose = document.querySelector('#bt_close')
 let srcVal = "";
-
+const idmodal = document.getElementById('idmodal')
+// let modalBg = document.getElementById('modalBg')
 
 for(let i = 0; i<imagens.length; i++){
     imagens[i].addEventListener('click', function(){
         
         srcVal = imagens[i].getAttribute('src');
         modalImg.setAttribute('src', srcVal);
-        modal.classList.toggle('modal_active');
+        const parentimg = imagens[i].parentElement;
+        parentimg.appendChild(idmodal)
+        idmodal.style.visibility = 'visible'
+        // modalBg.style.visibility = 'visible'
     });
 
 }
 
 btClose.addEventListener('click', function(){
-    modal.classList.toggle('modal_active');
+    idmodal.style.visibility = 'hidden'
+    // modalBg.style.visibility = 'hidden';
+}
+);
+
+modalBg.addEventListener('click', function(){
+    idmodal.style.visibility = 'hidden'
+    // modalBg.style.visibility = 'hidden';
 }
 );
 
