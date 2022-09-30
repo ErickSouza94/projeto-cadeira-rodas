@@ -1,7 +1,7 @@
 /* MENU BURGUER */
 
 function tamanho(){
-    if (window.innerWidth >= 992){
+    if (window.innerWidth >= 769){
         navmenu.style.display = 'block'
     }   else{
         navmenu.style.display = 'none'

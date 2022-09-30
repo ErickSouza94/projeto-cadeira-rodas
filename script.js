@@ -34,7 +34,7 @@ function leiaMais(){
 /* MENU BURGUER */
 
 function tamanho(){
-    if (window.innerWidth >= 992){
+    if (window.innerWidth >= 768){
         navmenu.style.display = 'block'
     }   else{
         navmenu.style.display = 'none'
